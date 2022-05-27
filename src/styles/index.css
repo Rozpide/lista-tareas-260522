@@ -10,3 +10,27 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.fondo{
+    text-align: center;
+}
+.hojaPrincipal{
+    background-color: blanchedalmond;
+    width: 25%;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+    border-color: rgb(213, 74, 28);
+
+}
+.hoja2{background-color: blanchedalmond;
+width:90% ;
+height: 5px;}
+.pencil{
+    background-color: azure;
+    border-color: rgb(195, 83, 45);
+}
+#hoja1 {
+    border-color: rgb(18, 17, 17);
+    height: 35px;
+    background: darksalmon;
+}
