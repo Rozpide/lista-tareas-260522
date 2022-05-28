@@ -18,7 +18,9 @@ const Home = () => {
 	return (
 		<div className="fondo">
 			<h1>
-				<b>LISTA DE TAREAS</b>
+				<b>
+					<i>LISTA DE TAREAS</i>
+				</b>
 			</h1>
 			<div class="hojaPrincipal">
 				<TareasPendientes agregarTarea={agregarTarea} />
@@ -28,18 +30,23 @@ const Home = () => {
 						<div key={index}>
 							<h4 id="hoja1">
 								{index + 1}.- {nombreTarea}
-								<button onClick={() => eliminarTarea(index)}>
-									x
-								</button>
+								<button
+									className="btn"
+									onClick={() =>
+										eliminarTarea(index)
+									}></button>
 							</h4>
 						</div>
 					);
 				})}
 			</div>
-			<legend>
-				<h6>tareas pendientes</h6>
-			</legend>
-			;
+
+			<div className="hoja2">
+				<legend>
+					<h6>tareas pendientes</h6>
+				</legend>
+			</div>
+			<div className="hoja3"></div>
 		</div>
 	);
 };

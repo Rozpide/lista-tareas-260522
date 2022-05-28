@@ -17,7 +17,13 @@ const TareasPendientes = (props) => {
 	return (
 		<>
 			<h3>Añadir tareas : </h3>
-			<input class="pencil" type="text" onChange={change} />
+			<input
+				class="pencil"
+				type="text"
+				onChange={change}
+				placeholder="Añadir tareas?.."
+			/>
+
 			<button onClick={guardarNombre}>
 				<b>Añadir</b>{" "}
 			</button>
